@@ -8,6 +8,10 @@ from main import app
 def homepage():
     return render_template("homepage.html")
 
+@app.route("/login" )
+def login():
+    return render_template("index.html")
+
 @app.route("/verdade")
 def verdade():
     return render_template("verdade.html")
